@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container
+        {
+            margin: auto;
+            max-width: 1400px;
+        }
+
+
+        .nav
+        {
+          background-color: rgb(17,24,39);
+          padding: 30px;
+          margin-top: 0;
+          text-align: center;
+          text-decoration: none;
+
+        }
+        
+        .nav a
+        {
+            display: inline-block;
+            margin-right: 15px;
+            
+        }
+
+
+        .nav a:hover
+        {
+            color: aqua;
+
+        }
+
+        #seccion1
+        {
+            background-color: rgb(17,24,39);
+            margin: 0;
+        }
+
+        header .container
+        {
+            margin: 0;
+        }
+
+        header
+        {
+            background-color: rgb(17,24,39);
+
+        }
+
+
+        header .logo
+        {
+            color: white;
+            text-align: center;
+            padding-top: 25px;
+            margin: 0;
+            
+        }
+
+        
+        #seccion1 a
+        {
+            margin: 0;
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+
+        }
+
+        #seccion1 a:hover
+        {
+            color: aqua; 
+
+        }
+
+        #seccion1 .ofertas
+        {
+            margin-top: 0 ;
+            margin-left: 10px;
+            background-color: black;
+            padding: 15px;
+            border-radius: 20px;
+            max-width: 350px;            
+ 
+        }
+
+    
+
+        header nav
+        {
+            flex-direction: column;
+            display: flex;
+            font-weight: bold;
+        }
+
+        header a
+        { 
+            text-decoration: none;
+            color: white;
+            padding: 5px 12px;
+        
+        }
+
+        header .container
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #seccion1 h1
+        {
+            color: white;
+            padding: 25px;
+            font-weight: bold;
+        }
+
+        #seccion1 p
+        {
+            color: white;
+            padding: 25px;
+            
+        }
+
+
+        #seccion1 .container p
+        {
+            color: gray;
+        }
+
+        #seccion1 .container span
+        {
+            color: white;
+        }
+
+        #seccion1 .container 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;        
+        }
+
+        #seccion1 .container input
+        {
+            width: 400px;
+            height: 50px;
+            border-radius: 10px;
+            
+        }
+
+        #seccion1 .container button
+        {
+            width: 400px;
+            height: 50px;
+            border-radius: 10px;
+            margin-top: 5px;
+            background-color: #369BA8;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.5s;
+            
+        }
+
+        #seccion1 .container button:hover
+        {
+            background-color: aqua;
+            color: black;
+        }
+
+
+        #seccion1 img
+        {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #seccion2 
+        {
+            background-color: rgb(249,250,251);
+            color: black;
+            
+        }
+        
+        #seccion2 .container
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            font-weight: bold;   
+        }
+
+        .cards
+        {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: white;
+            
+        }
+
+         .img img
+        {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            height: 12rem;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+
+        #seccion2 .img 
+        {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+
+        }
+
+        .texto
+        {
+            text-align: left;
+            padding: 20px;
+        }
+
+        .autor
+        {
+            color: #369BA8;
+            
+        }
+        
+        .autor .imagena
+        {
+            border-radius: 9999px;
+            display: flex;
+            width: 2.5rem;
+            height: 2.5rem ;
+        }
+
+        #seccion3
+        {
+            background-color: rgb(17,24,39);
+        }
+        
+        #seccion3 img
+        {
+            width: 100%;
+            object-fit: cover;
+            height: 15rem;
+        }
+
+
+        #seccion3 h4
+        {
+            color: rgb(249,250,251);
+        }
+        
+        #seccion3 h1
+        {
+            color: white;
+            font-weight: bold;
+
+        }
+
+        #seccion3 p
+        {
+            color:  rgb(249,250,251);
+
+        }
+
+        #seccion3 button
+        {
+            background-color:rgb(249,250,251) ;
+            width: 250px;
+            height: 50px;
+            border-radius: 10px;
+            margin-top: 5px;
+            color: black;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.5s;
+
+        }
+        
+        #seccion3 button:hover
+        {
+            background-color: aqua;
+            transition: 0.5;
+        }
+
+        #seccion3 .teayudamos
+        {
+            padding: 40px;
+        }
+
+        
+        #footer
+        {
+            background-color: #F9FAFB;
+
+        }
+        .autor a
+        {
+            text-decoration: none;
+        }
+
+        .autor 
+        {
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .autor-info {
+            margin-left: 10px;
+        }
+
+        .autor span
+        {
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <P class="logo">LOGO</P>
+            <nav class="nav">
+                <a href="#">Catalogo</a>
+                <a href="#">Quiene somos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Iniciar sesion</a>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section id="seccion1">
+        <div class="container">
+
+            <ul class="ofertas">
+                <a href="#">20% OFERTAS</a>
+                <a href="#">Conoce nuestas guitarras ></a>
+            </ul>
+            
+                <h1>COMUNICA TU ALMA CON UNA GUITARRA</h1>
+                <p>Si siempre has querido una guitarra, acércate a nosotros y te la enviamos, vivas donde vivas.</p>
+                <input type="text" name="email" id="email">
+                <button> Enviar</button> 
+                <p>Te contactaremos en 24 horas. Aceptamos todas las tarjetas de crédito y débito. <span>Conoce nuestros términos y condiciones.</span></p>
+            
+            <div class="img">
+                <img src="img/photo-1511379938547-c1f69419868d (1).avif" alt="">
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <section id="seccion2">
+        <div class="container">
+            <h4>NUEVAS</h4>
+            <h1>RECIEN LLEGADAS</h1>
+            <h4>¿Trovador o rockero? Triunfa como sea, con la guitarra correcta.</h4>
+        </div>
+
+        <div class="cards">
+            <div class="img">
+                <img src="/img/photo-1511379938547-c1f69419868d (1).avif" alt="">
+                <div class="texto">
+                    <h4>Nueva</h4>
+                    <h2>PRS SE Custom 22 Electric Guitar</h2>
+                    <p>Guitarra personalizada, en barniz, cuerdas de nylon, . Incluye amplificador individual. Conoce más de sus detalles técnicos</p>
+                    
+                    <div class="autor">
+                        <img class="imagena" src="img/autor.avif" alt="autor">
+                        <div class="autor-info">
+                            <a href="#">Roel Aufderehar </a>
+                            <span>Mar 16, 2020 ·6 min read </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cards">
+            <div class="img">
+                <img src="/img/photo-1583385788355-6cc226732695.avif" alt="">
+                <div class="texto">
+                    <h4>Nueva</h4>
+                    <h2>PRS SE Custom 22 Electric Guitar</h2>
+                    <p>Guitarra personalizada, en barniz, cuerdas de nylon, . Incluye amplificador individual. Conoce más de sus detalles técnicos</p>
+                    
+                    <div class="autor">
+                        <img class="imagena" src="img/autor.avif" alt="autor">
+                        <div class="autor-info">
+                            <a href="">Roel Aufderehar </a>
+                            <span>Mar 16, 2020 ·6 min read </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cards">
+            <div class="img">
+                <img src="/img/photo-1617160895032-11179689e7b5 (1).avif" alt="">
+                <div class="texto">
+                    <h4>Nueva</h4>
+                    <h2>PRS SE Custom 22 Electric Guitar</h2>
+                    <p>Guitarra personalizada, en barniz, cuerdas de nylon, . Incluye amplificador individual. Conoce más de sus detalles técnicos</p>
+                    
+                    <div class="autor">
+                        <img class="imagena" src="img/autor.avif" alt="autor">
+                        <div class="autor-info">
+                            <a href=""> Roel Aufderehar </a>
+                            <span>Mar 16, 2020 ·6 min read </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="seccion3">
+        <div class="container">
+            <div class="img3">
+                <img src="img/photo-1511379938547-c1f69419868d (1).avif" alt="">
+            </div>
+            <div class="teayudamos">
+                <h4>TE AYUDAMOS A ELEGIR</h4>
+                <h1>Cuentanos tus objetivos y podemos ayudarte a alcanzar ese nivel que buscas.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.</p>
+                <button> Contactar ya mismo</button>
+
+            </div>
+            
+
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="redes">
+            </div>
+    
+            <div class="guitarras">
+                <ul>
+                    <li>
+                        Catalogo
+                    </li>
+                </ul>
+    
+            </div>
+    
+            <div class="soporte">
+                <ul>
+                    <li>Soporte</li>
+                    <li>Precios y cotizacion</li>
+                    <li>Certificaciones</li>
+                    <li>Guias</li>
+                    
+                </ul>
+    
+            </div>
+    
+            <div class="Nosotros">
+                <ul>
+                    <li>NOSOTROS</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Trabajos</li>
+                    <li>Prensa</li>
+                    <li>Partners</li>
+                    
+                </ul>
+    
+            </div>
+    
+            <div class="Legal">
+                <ul>
+                    <li>Privacidad</li>
+                    <li>Términos</li>  
+                </ul>
+    
+            </div>
+    
+            <span> 2023. Todos los derechos reservados. Esta es una página de aterrizaje ficticia para fines académicos.</span>
+        </div>
+
+    </footer>
+        
+
+
+
+
+
+
+    
+    
+    
+</body>
+</html>
