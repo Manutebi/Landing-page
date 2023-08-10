@@ -163,7 +163,7 @@
 
         #seccion1 .container input
         {
-            width: 400px;
+            width: 350px;
             height: 50px;
             border-radius: 10px;
             
@@ -171,7 +171,7 @@
 
         #seccion1 .container button
         {
-            width: 400px;
+            width: 350px;
             height: 50px;
             border-radius: 10px;
             margin-top: 5px;
@@ -218,8 +218,8 @@
             display: flex;
             justify-content: center;
             margin-bottom: 30px;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
             background-color: white;
             
         }
@@ -347,6 +347,12 @@
         {
             display: flex;
         }
+       
+
+
+        
+
+
 
 
     </style>
@@ -362,6 +368,11 @@
                 <a href="#">Contacto</a>
                 <a href="#">Iniciar sesion</a>
             </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
         </div>
     </header>
     
@@ -527,6 +538,17 @@
         </div>
 
     </footer>
+
+    <script>
+        // Agregar la funcionalidad para mostrar/ocultar el menú al hacer clic en el ícono de hamburguesa
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.nav');
+
+        menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        });
+
+    </script>
         
 
 
