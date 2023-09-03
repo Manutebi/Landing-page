@@ -96,6 +96,7 @@ header .logo
     border-radius: 20px;
     max-width: 350px;
     display: flex;
+    margin-left: 20px;
     
 
 }
@@ -479,21 +480,9 @@ footer .container h3
         
     }
 
-    /* #seccion1 .container
-    {
-        display: grid;
-        flex-direction: row;
-        
+   
 
-    }
-
-    #seccion1 .img .firstimg
-    {
-        width: 100%; 
-        height: 1%; 
-        top: 100px;
-
-    } */
+ 
 
     #seccion2 .container-cards
     {
@@ -566,6 +555,19 @@ footer .container h3
     #seccion3 .container .img3
     {
         height: 300px;
+    }
+    #seccion1 .container
+    {
+        display: flex;
+        flex-direction: column;
+      
+    }
+    #seccion1 .container .firstimg
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
     }
 
 }
