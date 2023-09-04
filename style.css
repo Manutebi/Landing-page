@@ -432,7 +432,7 @@ footer .container h3
     margin-left: 2em;
 }
 
-.spa .a
+.spa 
 {
     margin-top: 130px;
     display: flex;
@@ -441,14 +441,8 @@ footer .container h3
     color:  rgb(107,114,12);
     padding: 10px;
     text-decoration: none;
+    gap: 5px;
 }
-
-.spa .a:hover
-{
-    color: aqua;
-}
-
-
 
 
 
