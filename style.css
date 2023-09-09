@@ -25,6 +25,13 @@ body
 
 }
 
+/* .abrirMenu,
+.cerrarMenu
+{
+    display: none;
+
+} */
+
 .ini
 {
     margin-left: auto;
@@ -448,6 +455,8 @@ footer .container h3
 
 
 
+
+
 @media  (min-width:720px)
 {
  
@@ -493,10 +502,6 @@ footer .container h3
         padding: 20px; /* Espacio entre las tarjetas */
         box-sizing: border-box; /* Incluir el padding en el ancho total de la tarjeta */
         max-width: 500px;
-        
-        
-        
-        
         
         
     }
@@ -554,7 +559,23 @@ footer .container h3
     {
         display: flex;
         flex-direction: column;
+
       
+    }
+
+    #seccion1 .container input
+    {
+        width: 100%;
+        margin: 0 0 15px 0 ;
+        gap: 5px;
+
+    }
+
+    #seccion1 .container button
+    {
+        width: 100%;
+        margin: 0;
+
     }
     #seccion1 .container .firstimg
     {
@@ -565,8 +586,5 @@ footer .container h3
     }
 
 }
-
-
-
 
 
